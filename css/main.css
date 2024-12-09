@@ -57,12 +57,12 @@ li {
     
   }
 
-  /* Version Mobile */
+
 
   @media screen and (max-width: 767px) {
 
 
-    ul {
+    .navigations {
         display: none;
     }
 
@@ -71,6 +71,18 @@ li {
     }
     
   }
+
+  @media screen and (min-width: 1024px) {
+
+    .nav-bar {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+  }
+
+
 
 
 
