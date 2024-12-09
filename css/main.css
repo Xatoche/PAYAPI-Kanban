@@ -17,7 +17,6 @@ body {
     
 }
 
-
 .navigations {
     color: #36536B;
     font-family: 'Public Sans';
@@ -42,7 +41,47 @@ li {
     border-radius: 10px;
 }
 
-    /* Version Tablette  */
+
+h1 {
+    font-family: DM Serif Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.phone-svg {
+    display: flex;
+    justify-content: center;
+}
+
+
+.connect-email {
+    width: 327px;
+    height: 285px;
+}
+
+.email-adress-buttom {
+
+    font-family: Public Sans;
+    color:#36536B;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    background-color: #FBFCFE;
+    box-shadow: 10px 10px 25px -10px #36536B40;
+    width: 327px;
+    height: 48px;
+    border-radius: 24px;
+}
+
+.connect-email {
+    display: flex;
+    justify-content: center;
+}
+
+
+
 
   @media screen and (min-width: 768px) {
 
@@ -51,10 +90,8 @@ li {
 
         display: none;
         justify-content: left;
-
     }
 
-    
   }
 
 
@@ -70,6 +107,7 @@ li {
         display: none;
     }
     
+
   }
 
   @media screen and (min-width: 1024px) {
@@ -79,7 +117,11 @@ li {
         justify-content: center;
     }
 
-    
+    .phone-svg {
+        display: flex;
+        justify-content: left;
+    }
+
   }
 
 
