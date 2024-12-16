@@ -70,7 +70,6 @@ h1 {
 
 .phone {
     padding: 15x;
-    flex-direction: column;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -123,6 +122,14 @@ h1 {
     font-weight: bold;
     width: 100%;
 }
+
+.sponsoring {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+
 
 @media screen and (min-width: 767px) {
 
@@ -194,7 +201,32 @@ h1 {
 
     .email-demo-container {
         display: flex;
+        max-width: 1100px;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: left;
     }
 
+    .phone {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        max-width: 1100px;
+    }
 
+    .image-phone {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .hero-content {
+        width: 50%;
+    }
+
+    h1 {
+        font-family: DM Serif Display;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 72px;
+    }
 }
