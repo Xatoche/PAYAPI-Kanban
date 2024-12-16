@@ -36,13 +36,13 @@ li {
     margin: auto;
 }
 
-.schedule-a-demo {
+.schedule-button-nav {
     text-align: center;
     font-family: 'Public Sans';
     color: #FBFCFE;
     background-color: #BA4270;
     text-decoration: none;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -68,21 +68,24 @@ h1 {
     margin-bottom: 25px;
 }
 
-.connect {
+.phone {
     padding: 15x;
     flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .enter-email-address {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    font-family: 'Public Sans';
+    align-items: center;
     color: #FBFCFE;
     text-decoration: none;
     padding: 10px;
     border-radius: 10px;
 }
+
 
 .contact {
     display: flex;
@@ -95,15 +98,78 @@ h1 {
     line-height: 17.63px;
 }
 
-@media screen and (min-width: 768px) {
+.email-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px 20px;
+    border-radius: 50px;
+    width: 100%;
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 16px;
+}
+
+.schedule-button {
+    background-color: #c84b70;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: bold;
+    width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+
     .image-burger-menu {
         display: none;
         justify-content: left;
+
     }
+
+    .email-demo-container {
+        border-radius: 50px;
+        padding: 5px;
+        position: relative;
+    }
+
+    .email-input {
+        border: none;
+        outline: none;
+        flex: 1;
+        padding: 10px 20px;
+        border-radius: 50px 0 0 50px;
+        font-size: 14px;
+        color: #6c757d;
+    }
+
+    .schedule-button {
+        background-color: #c84b70;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 50px;
+        font-weight: bold;
+        width: unset;
+        position: absolute;
+        right: 0;
+        top: 5px;
+    }
+
+    .schedule-button:hover {
+        background-color: #b63e61;
+    }
+
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .navigations {
         display: none;
     }
@@ -126,10 +192,9 @@ h1 {
         justify-content: left;
     }
 
-    h1 {
+    .email-demo-container {
         display: flex;
-        align-items: center;
-        
     }
+
 
 }
